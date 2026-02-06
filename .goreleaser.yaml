@@ -1,13 +1,15 @@
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json
 # vim: set ts=2 sw=2 tw=0 fo=cnqoj
 
-env:
-  - GITHUB_TOKEN
-
 release:
   github:
-    owner: jshiverick
+    owner: jshiv
     name: reading_logs_parser
+  disable: false
+
+gitlab_urls:
+  use_package_registry: false
+  skip_tls_verify: false
 
 before:
   hooks:
