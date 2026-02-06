@@ -1,0 +1,9 @@
+# Build artifacts
+reading-logs-parser
+dist/
+
+# Progress / runtime files
+.progress.json
+
+# OS files
+.DS_Store

@@ -17,6 +17,13 @@ import (
 	"github.com/invopop/jsonschema"
 )
 
+// Build-time variables (set via -ldflags)
+var (
+	version = "dev"
+	commit  = "unknown"
+	date    = "unknown"
+)
+
 const progressFile = ".progress.json"
 
 // ReadingLog represents the structured data extracted from a reading log image.
